@@ -14,7 +14,9 @@ Have fun!
 
 ## Setup instructions
 
-Open flagstring.txt and edit in the current country name and ranking you want to look for changes to. 
+Open settings.php and edit in the current API key, country name and ranking you want to look for changes to. 
+
+Then set up a cron job that runs the collect.php script on a daily basis.
 
 ## Todo items
 
