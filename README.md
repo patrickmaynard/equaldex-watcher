@@ -14,8 +14,13 @@ Have fun!
 
 ## Setup instructions
 
-Open flagstring.txt and edit in the current country name and ranking you want to look for changes to. 
+Open settings.php and edit in the current API key, country name and ranking you want to look for changes to. I suggest initially putting in a ranking that is **not** the current ranking for at least one day before changing it to be accurate, in order to make sure that the mailer works on your system. 
+
+Then set up a cron job that runs the collect.php script on a daily basis. 
+
+Assuming you put in the wrong raking on purpose, you should get an email within the next couple of days. Ignore what it says, and change the settings file to have the correct ranking. Now you can ignore the whole thing until whenever it flags a new ranking, at which point you'll need to update the settings file again so you don't get an email every day. 
 
 ## Todo items
 
-Make a more complex version that can be hosted, uses a database and allows users to sign up for emails based on a number of different possible change detections. 
+Someday, maybe I'll make a more complex version that can be hosted, uses a database and a web UI and allows users to sign up for emails based on a number of different possible change detections. Meanwhile, if someone wants to be me to it, please do so.
+
