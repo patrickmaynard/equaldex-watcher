@@ -22,5 +22,5 @@ Assuming you put in the wrong raking on purpose, you should get an email within 
 
 ## Todo items
 
-Someday, maybe I'll make a more complex version that can be hosted, uses a database and a web UI and allows users to sign up for emails based on a number of different possible change detections. Meanwhile, if someone wants to be me to it, please do so.
+Someday, maybe I'll make a more complex version that can be hosted, uses a database and a web UI and allows users to sign up for emails based on a number of different possible change detections. Meanwhile, if someone wants to beat me to it, please do so.
 
