@@ -33,7 +33,7 @@ if ($rank !== $expectedRank) {
     if(mail($recipientAddress, $subject, $message)){
         print 'Mail sent.' . PHP_EOL;
     }  else {
-        print 'Mail not sent.' . PHP_EOL;
+        print 'Mail not sent to address "' . $recipientAddress . '". ' . PHP_EOL;
         exit(1); 
     }
 }
