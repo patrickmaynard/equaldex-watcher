@@ -2,8 +2,8 @@
 
 include_once('settings.php');
 
-$apiKey = getenv('API_KEY') ?? $settings['api_key'];
-$recipientAddress = getenv('RECIPIENT_ADDRESS') ?? $settings['recipient_address'];
+$apiKey = $settings['api_key'];
+$recipientAddress = $settings['recipient_address'];
 $regionId = $settings['region_id'];
 $expectedRank = $settings['expected_rank'];
 $humanUrl = $settings['human_readable_url'];
