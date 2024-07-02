@@ -31,9 +31,9 @@ if ($rank !== $expectedRank) {
     $message .= 'See ' . $humanUrl . ' for country details, then cross check against archive.org for comparison.';
     print 'The message that will be sent: ' . PHP_EOL . $message . PHP_EOL;
     if(mail($recipientAddress, $subject, $message)){
-        print 'Mail sent.' . PHP_EOL;
+        print 'Mail SENT to address "' . $recipientAddress . '". ' . PHP_EOL;
     }  else {
-        print 'Mail not sent to address "' . $recipientAddress . '". ' . PHP_EOL;
+        print 'Mail NOT sent to address "' . $recipientAddress . '". ' . PHP_EOL;
         exit(1); 
     }
 }
