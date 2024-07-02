@@ -29,6 +29,9 @@ if ($rank !== $expectedRank) {
     $message .= 'I expected rank ' . $expectedRank . ' for ' . $countryName . ' but got ' . $rank . '. ';
     $message .= PHP_EOL; 
     $message .= 'See ' . $humanUrl . ' for country details, then cross check against archive.org for comparison.';
+    $headers = 'From: no-reply@patrickmaynard.com' . "\r\n" .
+    'Reply-To: patrickmaynard@gmail.com' . "\r\n" .
+    'X-Mailer: PHP/' . phpversion();
     print 'The message that will be sent: ' . PHP_EOL . $message . PHP_EOL;
     if(mail($recipientAddress, $subject, $message)){
         print 'Mail SENT to address "' . $recipientAddress . '". ' . PHP_EOL;
