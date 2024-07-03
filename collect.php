@@ -4,7 +4,7 @@ include_once('settings.php');
 $apiKey = $settings['api_key'];
 $recipientAddress = $settings['recipient_address'];
 $regions = $settings['regions'];
-if (false && filemtime('lastrun.txt') < time() + 86000 || count($regions) > 12) {
+if (filemtime('lastrun.txt') < time() + 86000 || count($regions) > 12) {
     print 'Please run this scraper less aggressively to avoid taxing the equaldex server. Exiting without a scrape.';
     print PHP_EOL;
     exit(1);
